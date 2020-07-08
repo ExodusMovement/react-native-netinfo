@@ -10,7 +10,7 @@
 
 import React, {Component} from 'react';
 import {Button, Text, View} from 'react-native';
-import NetInfo from '@react-native-community/netinfo';
+import NetInfo from '@exodus/netinfo';
 
 type State = {
   results: boolean[],
@@ -32,8 +32,8 @@ export default class MultipleIsConnected extends Component<{}, State> {
 
   _onPress = () => {
     for (let i = 0; i < TEST_CASE_COUNT; i++) {
-      NetInfo.isConnected.fetch().then(isConnected => {
-        this.setState(state => {
+      NetInfo.isConnected.fetch().then((isConnected) => {
+        this.setState((state) => {
           const results = state.results.map((result, index) =>
             index === i ? true : result,
           );

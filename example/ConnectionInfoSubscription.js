@@ -10,7 +10,7 @@
 
 import React from 'react';
 import {Text, View} from 'react-native';
-import NetInfo from '@react-native-community/netinfo';
+import NetInfo from '@exodus/netinfo';
 
 export default class ConnectionInfoSubscription extends React.Component<
   {},
@@ -34,7 +34,7 @@ export default class ConnectionInfoSubscription extends React.Component<
     );
   }
 
-  _handleConnectionInfoChange = connectionInfo => {
+  _handleConnectionInfoChange = (connectionInfo) => {
     const connectionInfoHistory = this.state.connectionInfoHistory.slice();
     connectionInfoHistory.push(connectionInfo);
     this.setState({

@@ -10,7 +10,7 @@
 
 import React from 'react';
 import {Text, TouchableWithoutFeedback, View} from 'react-native';
-import NetInfo from '@react-native-community/netinfo';
+import NetInfo from '@exodus/netinfo';
 
 export default class IsConnectionExpensive extends React.Component<
   {},
@@ -21,7 +21,7 @@ export default class IsConnectionExpensive extends React.Component<
   };
 
   _checkIfExpensive = () => {
-    NetInfo.isConnectionExpensive().then(isConnectionExpensive => {
+    NetInfo.isConnectionExpensive().then((isConnectionExpensive) => {
       this.setState({isConnectionExpensive});
     });
   };

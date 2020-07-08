@@ -10,7 +10,7 @@
 
 import React from 'react';
 import {Text, View} from 'react-native';
-import NetInfo from '@react-native-community/netinfo';
+import NetInfo from '@exodus/netinfo';
 
 export default class IsConnected extends React.Component<{}, $FlowFixMe> {
   state = {
@@ -22,7 +22,7 @@ export default class IsConnected extends React.Component<{}, $FlowFixMe> {
       'connectionChange',
       this._handleConnectivityChange,
     );
-    NetInfo.isConnected.fetch().done(isConnected => {
+    NetInfo.isConnected.fetch().done((isConnected) => {
       this.setState({isConnected});
     });
   }
@@ -34,7 +34,7 @@ export default class IsConnected extends React.Component<{}, $FlowFixMe> {
     );
   }
 
-  _handleConnectivityChange = isConnected => {
+  _handleConnectivityChange = (isConnected) => {
     this.setState({
       isConnected,
     });

@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-community/netinfo",
+  "name": "@exodus/netinfo",
   "version": "1.4.0",
   "description": "React Native Network Info API for iOS & Android",
   "main": "js/index.js",
@@ -8,7 +8,7 @@
   "contributors": [
     "Mike Diarmid (Salakar) <mike@invertase.io>"
   ],
-  "homepage": "https://github.com/react-native-community/react-native-netinfo#readme",
+  "homepage": "https://github.com/ExodusMovement/react-native-netinfo#readme",
   "license": "MIT",
   "scripts": {
     "start": "react-native start",
@@ -108,6 +108,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-community/react-native-netinfo.git"
+    "url": "https://github.com/ExodusMovement/react-native-netinfo.git"
   }
 }

@@ -5,7 +5,7 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "@react-native-community/netinfo": "./js"
+          "@exodus/netinfo": "./js"
         },
         cwd: "babelrc"
       }
